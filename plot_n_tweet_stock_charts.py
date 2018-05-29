@@ -1,5 +1,5 @@
 from matplotlib.finance import candlestick_ohlc
-import pandas_datareader.data as web
+import pandas_datareader.data as data
 import matplotlib.pyplot as plt
 from matplotlib import style
 from datetime import date
@@ -20,7 +20,7 @@ def get_quotes(y,m,d):
     
     stocks = ['GPRO', 'AMD', 'MU', 'TSLA', 'SNAP', 'GE']
     for stock in stocks:
-        df = web.DataReader(stock, "morningstar", start, end)
+        df = data.DataReader(stock, "morningstar", start, end)
         df.reset_index(inplace=True)
         df.set_index("Date", inplace=True)
         df = df.drop("Symbol", axis=1)
