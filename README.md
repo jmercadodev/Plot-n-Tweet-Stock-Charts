@@ -10,3 +10,7 @@
 
 ''' Stock Images are written to a folder called 'images'
     You might have to create this folder manually '''
+   
+
+''' You will also have to get your own Twitter API Keys
+    and place them in 'keys.py', key = 'your_keys_here'  '''
