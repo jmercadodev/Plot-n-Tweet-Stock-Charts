@@ -8,3 +8,5 @@
 4) Tweet Stock Chart
 5) Delete 'stock.png' from 'image' folder to retain drive space
 
+''' Stock Images are written to a folder called 'images'
+    You might have to create this folder manually '''
